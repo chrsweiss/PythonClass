@@ -1,0 +1,40 @@
+Message Type:
+inforBusinessContext
+ 
+View Type:
+{
+  "type": "inforBusinessContext",
+  "data": {
+    "screenId": "CSI_Vendors",
+    "logicalId": "lid://infor.syteline.csi/NEE-MFG",
+    "entities": [
+      {
+        "entityType": "InforAccountingEntity",
+        "id1": "NEE-MFG"
+      },
+      {
+        "entityType": "InforPurchaseOrder",
+        "accountingEntity": "NEE-MFG",
+        "id1": "V000001"
+      },
+      {
+        "entityType": "InforSalesInvoice",
+        "accountingEntity": "NEE-MFG",
+        "id1": "",
+        "id3": "V000001"
+      },
+      {
+        "entityType": "InforVendor",
+        "accountingEntity": "NEE-MFG",
+        "drillbackURL": "?LogicalId=lid://infor.syteline.csi/NEE-MFG&page=formonly&form=Vendors(FILTER(VendNum%3D%27V000001%27)SETVARVALUES(InitialCommand%3DRefresh))",
+        "id1": "V000001",
+        "name": "ADI - HONEYWELL INTERNATIONAL"
+      },
+      {
+        "entityType": "SupplierPartyMaster",
+        "accountingEntity": "NEE-MFG",
+        "id1": "V000001"
+      }
+    ]
+  }
+}
